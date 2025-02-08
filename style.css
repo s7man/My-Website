@@ -84,3 +84,18 @@ footer {
   width: 100%;
   margin-top: auto;
 }
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: expanded;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  text-align: center;
+  text-decoration: underline;
+  color: #ff0000;
+
+}
