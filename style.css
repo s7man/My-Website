@@ -1,6 +1,20 @@
+* {
+  user-select: none;  /* Standard */
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Edge */
+}
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
+  font-size: normal;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-decoration: none;
   margin: 0;
   padding: 0;
   background-color: #f2efe7;
@@ -10,6 +24,53 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+h1 {
+  color: #ff0000;
+  font-family: 'Algerian';
+  font-size: 29pt;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: expanded;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 11px;
+  text-align: center;
+  text-decoration: underline;
+   text-decoration: none;
+  
+}
+
+h2 { color: #1F4E79;
+  font-family:"Calibri Light";
+  font-size: 20pt;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: expanded;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 11px;
+  text-align: center;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+h3 { color: #005E00;
+  font-family:"Calibri Light";
+  font-size: 15pt;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: expanded;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 11px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
+
+
+
 
 /* Header */
 header {
@@ -37,12 +98,14 @@ nav a {
   display: inline-block;
   font-weight: normal;
   transition: background 0.3s ease;
-}
 
+}
 nav a:hover {
   background: #97b2c8;
   border-radius: 5px;
+
 }
+
 
 /* Main Container */
 .container {
@@ -73,7 +136,8 @@ nav a:hover {
 }
 
 .container a:hover {
-  background: #1f5a8d;
+  background: #318cdb;
+  scale: 1.1;
 }
 
 /* Footer */
@@ -83,19 +147,4 @@ footer {
   padding: 10px 0;
   width: 100%;
   margin-top: auto;
-}
-
-h1 {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: italic;
-  font-stretch: expanded;
-  line-height: 1.5;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-  text-align: center;
-  text-decoration: underline;
-  color: #ff0000;
-
 }
