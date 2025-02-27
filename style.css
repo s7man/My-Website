@@ -4,72 +4,6 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Edge */
 }
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  font-size: normal;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  background-color: #f2efe7;
-  text-align: center;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-h1 {
-  color: #ff0000;
-  font-family: 'Algerian';
-  font-size: 29pt;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: expanded;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  word-spacing: 11px;
-  text-align: center;
-  text-decoration: underline;
-   text-decoration: none;
-  
-}
-
-h2 { color: #1F4E79;
-  font-family:"Calibri Light";
-  font-size: 20pt;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: expanded;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  word-spacing: 11px;
-  text-align: center;
-  text-decoration: none;
-  text-decoration: none;
-}
-
-h3 { color: #005E00;
-  font-family:"Calibri Light";
-  font-size: 15pt;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: expanded;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  word-spacing: 11px;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration: none;
-}
-
-
-
 
 
 /* Header */
@@ -77,53 +11,60 @@ header {
   background: #9acbd0;
   color: rgb(0, 0, 0);
   padding: 20px 0;
-
+  text-align: center;
 }
-
-header h1 {
+.h1 {
   margin: 0;
-  font-weight: normal;
+  font-weight: bolder;
+  font-family: Lucida Handwriting, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #ff0000;
 }
+.p1 {
+font-size: small;
+}
+
 
 /* Navigation */
 nav {
   background: #6a7297;
   padding: 10px 0;
+  text-align: center;
 }
-
 nav a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 1.3vh 1.3vw;
+  margin-left: 4.5vw;
+  margin-left: 4.5vw;
   display: inline-block;
   font-weight: normal;
-  transition: background 0.3s ease;
-
-}
+  transition: background 0.4s ease;
+  }
 nav a:hover {
   background: #97b2c8;
-  border-radius: 5px;
-
+  border-radius: 7px;
+  border: 1px solid rgb(95, 231, 255);
 }
 
 
-/* Main Container */
-.container {
+/* Main bdy */
+.bdy {
   max-width: 800px;
   margin: 20px auto;
   background: white;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-.container h2 {
+.h2 {
   color: #5c6784;
-  font-weight: normal;
+  font-weight: normal;  
 }
-
-.container a {
+.bdy a {
   display: block;
   margin: 10px 0;
   padding: 10px;
@@ -133,18 +74,128 @@ nav a:hover {
   border-radius: 5px;
   font-weight: normal;
   transition: background 0.3s ease;
+  width: 30vw;
+  text-align: center;
 }
-
-.container a:hover {
+.bdy a:hover {
   background: #318cdb;
   scale: 1.1;
+  transition: 0.2s;
 }
 
 /* Footer */
 footer {
   background: #2973b2;
   color: white;
-  padding: 10px 0;
+  padding: 5px 0;
   width: 100%;
   margin-top: auto;
+  text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Document Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: auto;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Paragraph and List Styling */
+p {
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Highlight Important Sections */
+.important {
+  font-weight: bold;
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+  h1 {
+      font-size: 22px;
+  }
+  h2 {
+      font-size: 18px;
+  }
+}
+
