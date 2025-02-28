@@ -28,16 +28,19 @@ font-size: small;
 /* Navigation */
 nav {
   background: #6a7297;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav a {
   color: white;
   text-decoration: none;
-  padding: 1.3vh 1.3vw;
+  padding: 0.2vh 1.8vw;
   margin-left: 4.5vw;
   margin-left: 4.5vw;
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: normal;
   transition: background 0.4s ease;
   }
