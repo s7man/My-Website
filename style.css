@@ -5,6 +5,15 @@
   -ms-user-select: none; /* Edge */
 }
 
+/* General Document Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
 
 /* Header */
 header {
@@ -13,17 +22,18 @@ header {
   padding: 20px 0;
   text-align: center;
 }
+
 .h1 {
   margin: 0;
   font-weight: bolder;
-  font-family: Lucida Handwriting, Arial, Helvetica, sans-serif;
+  font-family: Serif;
   font-size: 3rem;
   color: #ff0000;
 }
-.p1 {
-font-size: small;
-}
 
+.p1 {
+  font-size: small;
+}
 
 /* Navigation */
 nav {
@@ -34,24 +44,23 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   padding: 0.2vh 1.8vw;
-  margin-left: 4.5vw;
-  margin-left: 4.5vw;
-  /* display: inline-block; */
+  margin: 0 4.5vw;
   font-weight: normal;
   transition: background 0.4s ease;
-  }
+}
+
 nav a:hover {
   background: #97b2c8;
   border-radius: 7px;
   border: 1px solid rgb(95, 231, 255);
 }
 
-
-/* Main bdy */
+/* Main Body */
 .bdy {
   max-width: 800px;
   margin: 20px auto;
@@ -63,64 +72,39 @@ nav a:hover {
   align-items: center;
   flex-direction: column;
 }
+
 .h2 {
   color: #5c6784;
   font-weight: normal;  
 }
+
 .bdy a {
   display: block;
   margin: 10px 0;
   padding: 10px;
-  background: #2973b2;
+  background: #0099cc;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: normal;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
   width: 30vw;
   text-align: center;
 }
+
 .bdy a:hover {
-  background: #318cdb;
-  scale: 1.1;
-  transition: 0.2s;
+  background: #5bb8d7;
+  transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-  background: #2973b2;
+  background: #6e87d8;
   color: white;
-  padding: 5px 0;
+  padding: 1px 0;
   width: 100%;
   margin-top: auto;
   text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* General Document Styling */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: auto;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
 }
 
 /* Heading Styles */
@@ -201,4 +185,3 @@ table tr:nth-child(even) {
       font-size: 18px;
   }
 }
-
