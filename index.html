@@ -4,35 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes Sharing Platform</title>
+  <meta name="description" content="Notes Share is a semester-wise study notes library for engineering students.">
+  <title>Notes Share | Semester Notes Library</title>
+  <script src="data/theme-init.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="homepage">
-    <div class="h1"> Welcome  to  Notes  Share </div>
-    <p class="p1">Your platform to share and access study notes</p>
+  <header class="site-hero">
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Notes Share</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#semesters">Semesters</a>
+        <a href="#catalog">Subjects</a>
+        <a href="support and contact/support.html">Contact Us</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-mark" aria-hidden="true"></span>
+          <span id="themeToggleText">Dark</span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Study notes library</p>
+      <h1>Notes organized by semester, subject, and unit.</h1>
+      <p>Start with your semester, choose a subject, then open the exact unit notes you need.</p>
+      <div class="hero-actions">
+        <a class="button primary-button" href="#semesters">Browse Semesters</a>
+        <a class="button secondary-button" href="support and contact/support.html">Contact</a>
+      </div>
+    </section>
   </header>
-  
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Categories</a>
-    <a href="#">Contact Us</a>
-    <a href="support and contact/support.html">Support Us</a>
-  </nav>
-  
-  <div class="bdy">
-    <div class="h2">Featured Notes</div>
-    <a href="Notes/etnc.html"> ET&C </a>
-    <a href="Notes/EnS/EnS.html"> EnS</a>
-    <a href="Notes/eepm/eepm.html"> eepm</a>
-    <a href="Notes/eepm/eepm.html"> EVS</a>
-    <a href="Notes/eepm/eepm.html"> ECnA</a>
-  </div>
-  
-  
+
+  <main>
+    <section class="notes-section" id="semesters" aria-labelledby="semester-title">
+      <div class="section-heading">
+        <p class="eyebrow">Categories</p>
+        <h2 id="semester-title">Choose Semester</h2>
+        <p>Each semester can hold multiple subjects, and each subject can hold multiple units.</p>
+      </div>
+
+      <div class="semester-nav" id="semesterNav" aria-label="Semester navigation"></div>
+    </section>
+
+    <section class="notes-section catalog-section" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <p class="eyebrow">Library</p>
+        <h2 id="catalog-title">Subjects and Units</h2>
+        <p>Search by semester, subject, unit, or topic keyword.</p>
+      </div>
+
+      <form class="search-form" id="searchForm" role="search">
+        <label class="search-label" for="noteSearch">Search notes</label>
+        <div class="search-row">
+          <input id="noteSearch" class="search-input" type="search" placeholder="Search 6th sem, ENTC, safety, testing..." autocomplete="off">
+          <button class="button search-button" type="submit">Search</button>
+        </div>
+      </form>
+
+      <div class="catalog-root" id="catalogRoot"></div>
+      <p class="empty-state" id="emptyState" hidden>No matching notes found.</p>
+    </section>
+
+    <section class="contact-band" id="contact">
+      <div>
+        <p class="eyebrow">Contribute</p>
+        <h2>Have notes to share?</h2>
+        <p>Send corrections, new subject notes, or missing unit content from the contact page.</p>
+      </div>
+      <a class="button primary-button" href="support and contact/support.html">Contact Us</a>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Notes Share | All Rights Reserved</p>
+    <p>&copy; 2026 Notes Share | All Rights Reserved</p>
   </footer>
+
+  <script src="data/theme.js"></script>
+  <script src="data/notes-catalog.js"></script>
+  <script src="data/catalog-ui.js"></script>
 </body>
+
 </html>
