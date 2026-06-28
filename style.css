@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Light theme variables */
 :root {
   color-scheme: light;
@@ -81,6 +82,43 @@ body {
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+=======
+* {
+  user-select: none;  /* Standard */
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Edge */
+}
+
+/* General Document Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #9acbd0;
+  color: rgb(0, 0, 0);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.h1 {
+  margin: 0;
+  font-weight: bolder;
+  font-family: Serif;
+  font-size: 3rem;
+  color: #ff0000;
+}
+
+.p1 {
+  font-size: small;
+>>>>>>> main
 }
 
 a {
@@ -96,12 +134,21 @@ input:focus-visible {
 
 /* Shared navigation */
 nav {
+<<<<<<< HEAD
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   background: var(--nav);
   padding: 12px 18px;
+=======
+  background: #6a7297;
+  padding: 5px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> main
 }
 
 nav a {
@@ -110,6 +157,7 @@ nav a {
   font-weight: 700;
   padding: 9px 14px;
   text-decoration: none;
+<<<<<<< HEAD
   transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -775,10 +823,119 @@ table {
 th,
 td {
   border: 1px solid var(--line);
+=======
+  padding: 0.2vh 1.8vw;
+  margin: 0 4.5vw;
+  font-weight: normal;
+  transition: background 0.4s ease;
+}
+
+nav a:hover {
+  background: #97b2c8;
+  border-radius: 7px;
+  border: 1px solid rgb(95, 231, 255);
+}
+
+/* Main Body */
+.bdy {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2 {
+  color: #5c6784;
+  font-weight: normal;  
+}
+
+.bdy a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background: #0099cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: normal;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 30vw;
+  text-align: center;
+}
+
+.bdy a:hover {
+  background: #5bb8d7;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #6e87d8;
+  color: white;
+  padding: 1px 0;
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Paragraph and List Styling */
+p {
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+>>>>>>> main
   padding: 10px;
   text-align: left;
 }
 
+<<<<<<< HEAD
 th {
   background: var(--table-head-bg);
   color: var(--table-head-text);
@@ -863,3 +1020,32 @@ tr:nth-child(even) {
     font-size: 2rem;
   }
 }
+=======
+table th {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Highlight Important Sections */
+.important {
+  font-weight: bold;
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+  h1 {
+      font-size: 22px;
+  }
+  h2 {
+      font-size: 18px;
+  }
+}
+>>>>>>> main
